@@ -6,6 +6,7 @@ const ekleFormu = document.getElementById("ekle-formu");
 const gelirinizTd = document.getElementById("geliriniz");
 const giderinizTd = document.getElementById("gideriniz");
 const kalanTd = document.getElementById("kalan");
+/* const kalan = document.getElementById("kalanTh"); */
 
 //? Variables
 let gelirler = 0;
@@ -44,6 +45,8 @@ const harcamaFormu = document.getElementById("harcama-formu");
 const harcamaAlani = document.getElementById("harcama-alani");
 const tarihInput = document.getElementById("tarih");
 const miktarInput = document.getElementById("miktar");
+
+
 
 const harcamaBody = document.getElementById("harcama-body");
 const temizleBtn = document.getElementById("temizle-btn");
@@ -118,8 +121,18 @@ const hesaplaVeGuncelle = () => {
   giderinizTd.textContent = giderler
   gelirinizTd.textContent = gelirler
   kalanTd.textContent = gelirler - giderler
-}
+/*   if (gelirler-giderler >= 0){
+    kalanTd.style.color = "green"
+    
 
+  }else {
+    kalanTd.style.color = "red"
+    kalan.style.color = "red"
+
+  } */
+}
+/* const kalanTd = document.getElementById("kalan");
+const kalan = document.getElementById("kalanTh"); */
 //? Silme işlemi
 
 harcamaBody.addEventListener("click", (e) =>{
